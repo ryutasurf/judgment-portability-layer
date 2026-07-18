@@ -1,0 +1,7 @@
+interface:
+  display_name: "\u6749\u672C\u5F0F\u30FB\u5224\u65AD\u76E3\u67FB"
+  short_description: "\u76EE\u7684\u30FB\u53CD\u8A3C\u30FB\u5909\u66F4\u6761\u4EF6\
+    \u304B\u3089\u610F\u601D\u6C7A\u5B9A\u306E\u8CEA\u3068\u30EA\u30B9\u30AF\u3092\
+    \u4F53\u7CFB\u7684\u306B\u76E3\u67FB\u3059\u308B"
+  default_prompt: Use $audit-decisions to audit my decision, identify material counterevidence,
+    and define the smallest next test.
