@@ -1,55 +1,69 @@
-# Demo script — under three minutes
+# 3分デモ動画台本（日本語音声版）
 
-## 0:00–0:20 — The problem
+音声は日本語で収録し、YouTubeで英語字幕を付ける。全体を3分未満に収める。
 
-“Personalized AI can know a person's facts and preferences. But valuable human knowledge is often not the facts—it is how the person decides. Today that method usually disappears with the person or remains trapped inside one private AI.”
+## 0:00–0:20　問題提起
 
-Show the plugin folder and its two Skills.
+「パーソナライズされたAIは、その人の経歴や好みを知ることができます。でも、人間の知の本体は、知っている事実だけではありません。何を重視し、どう反証し、どの条件で判断を変えるか。つまり、その人の判断方法にあります。」
 
-## 0:20–0:45 — The architecture
+画面：GitHubのトップページと二つのスキルを映す。
 
-“Judgment Portability Layer separates identity from method. It transfers no biography, personality profile, private memory, or third-party data. It transfers an inspectable decision procedure: objectives, evidence, counterevidence, risk, reversibility, and update conditions.”
+## 0:20–0:45　今回作ったもの
 
-Show the four layers in the README.
+「Judgment Portability Layerは、人間そのものではなく、人間の判断方法だけを別のAIへ移植するCodexプラグインです。経歴、人格、個人情報、プライベートなメモリは渡しません。目的、事実、解釈、反証、リスク、撤回条件で構成された判断手順だけを渡します。」
 
-## 0:45–1:25 — General Skill
+画面：READMEのIdentity／Philosophy／Method／Domainの4層を映す。
 
-Run the publication-channel decision through `$audit-decisions`.
+## 0:45–1:25　判断監査スキルの実演
 
-Point out:
+画面：次の文章をChatGPTまたはCodexへ入力する。
 
-- facts versus interpretations;
-- the true objective;
-- strongest counterevidence;
-- smallest reversible test;
-- explicit stop or update conditions.
+```text
+監査スキルを使って、この判断を監査して。
+新しい発信経路を試し、300クリックで売上はゼロ、
+さらに運営上の手間も発生した。継続・修正・撤退のどれが妥当か。
+```
 
-“This is not generic advice. The Skill forces a repeatable audit contract.”
+「一つ目は、あらゆる意思決定に使える判断監査スキルです。目的と手段を分け、観測事実と解釈を分け、もっとも強い反証を探します。そのうえで、最小の可逆的テストと、継続・修正・撤退の条件を明示します。単なる助言ではなく、毎回同じ監査手順を実行します。」
 
-## 1:25–2:05 — Specialist Skill
+画面：出力のObjective、Counterevidence、Smallest next test、Update conditionsを順に示す。
 
-Run the S&P 500 breakout and 5% Treasury-yield case through `$update-ryuta-market-outlook`.
+## 1:25–2:05　相場判断スキルの実演
 
-Point out:
+画面：次の文章を入力する。
 
-- seven-year precedent base;
-- evidence priority;
-- regime rather than next-tick prediction;
-- exact portfolio mapping;
-- invalidation conditions.
+```text
+相場判断スキルを使って、S&P500が最高値を更新する一方、
+米10年債利回りが5％へ向かっている場合に、
+株式比率を引き上げるべきか判定して。
+```
 
-“The same architecture now carries a much denser specialist method.”
+「二つ目は、7年間の市場記録から抽出した相場判断スキルです。翌日の価格を予想するのではなく、市場をレジームとして判定します。証拠の優先順位、過去の判断事例、因果関係、反証条件を確認し、最後に具体的な資産配分へ落とします。価格が上がったという理由だけでは判断を変えず、長期金利がその上昇を裏付けているかまで検証します。」
 
-## 2:05–2:30 — Portability proof
+画面：Evidence priority、Regime judgment、Portfolio action、Invalidation conditionsを示す。
 
-“The general Skill was installed in another person's personalized AI and worked without sharing either person's identity or memory. That is the key result: the method moved; the person did not.”
+## 2:05–2:30　移植の実証
 
-Do not identify the recipient. Show only a sanitized before/after output comparison.
+「汎用的な判断監査スキルは、別人のパーソナライズされたAIへ実際に移植しました。相手の人格も、私の人格も、個人情報も共有していません。それでも、同じ判断構造が別のAI上で動きました。移動したのは人間ではなく、判断方法です。」
 
-## 2:30–2:50 — Why it matters
+画面：第三者を特定できないよう加工した、移植前後の出力例を映す。
 
-“Prompts share instructions. Skills can carry accumulated human judgment. This creates a path for expert corrections, organizational practices, and long decision records to become reusable, testable AI capabilities.”
+## 2:30–2:52　CodexとGPT-5.6の役割
 
-## 2:50–2:59 — Close
+「CodexとGPT-5.6は、7年分の記録を比較し、繰り返される因果関係、判断ルール、例外、撤回条件を抽出するために使いました。さらに、それを二つのスキルと一つの検証可能なプラグインへ実装し、構造検証まで自動化しました。」
 
-“AI is moving from a tool that knows us to infrastructure that can carry what we know.”
+画面：GitHubのskillsフォルダと検証プログラムを映す。
+
+## 2:52–2:59　締め
+
+「AIは、自分を知る道具から、自分の知を運ぶ基盤へ変わり始めています。」
+
+画面：Judgment Portability Layerのタイトルで終了。
+
+## 収録時の注意
+
+- 冒頭と最後以外は顔出し不要。画面録画だけでよい。
+- 第三者の氏名、所属、アカウント名は映さない。
+- 出力全文を読まず、該当箇所をカーソルで示す。
+- 2分40秒から2分55秒程度を目標にする。
+- YouTube公開時に英語字幕を追加する。
