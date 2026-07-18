@@ -1,0 +1,18 @@
+{
+  "name": "portable-judgment-methods",
+  "version": "0.1.0",
+  "description": "Transfer human decision methods between AI environments without transferring personality or personal data.",
+  "author": {
+    "name": "Ryuta Sugimoto"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Judgment Portability Layer",
+    "shortDescription": "Run transferable human decision methods without copying identity.",
+    "longDescription": "A two-skill demonstration of portable human judgment: a general decision-audit engine and a seven-year, regime-based market decision system. The plugin separates method from personality, private memory, and personal data so the same reasoning structure can run in another AI environment.",
+    "developerName": "Ryuta Sugimoto",
+    "category": "Developer Tools",
+    "capabilities": ["skills"],
+    "defaultPrompt": "Show me how a human decision method can be transferred without transferring the person."
+  }
+}
